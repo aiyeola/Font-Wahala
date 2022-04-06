@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -12,7 +12,16 @@ export default function Home() {
       </Head>
       <main>
         <Box h="100vh" bg="app.bg" color="">
-          Hello man
+          <Heading fontSize={"30px"} fontWeight={600}>
+            Dispatch Orders
+          </Heading>
+          <Text
+            // fontFamily={"GT Walsheim Pro"}
+            fontSize={"30px"}
+            fontWeight={600}
+          >
+            Finesse Pharmacy
+          </Text>
         </Box>
       </main>
     </div>

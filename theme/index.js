@@ -5,7 +5,7 @@ import styles from "./styles";
 const config = {
   initialColorMode: "light",
   useSystemColorMode: false,
-  cssVarPrefix: "fortedges",
+  cssVarPrefix: "trackhub",
 };
 
 const overrides = {
@@ -15,5 +15,12 @@ const overrides = {
 };
 
 const theme = extendTheme(overrides);
+
+// const theme = extendTheme({
+//   //   fonts: {
+//   //     heading: "Montserrat, sans-serif",
+//   //     body: "GT Walsheim Pro, sans-serif",
+//   //   },
+// });
 
 export default theme;
