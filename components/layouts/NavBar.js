@@ -7,10 +7,9 @@ const NavBar = () => {
 
   return (
     <Box
-      pt="40px"
       h="full"
       bg="app.bg"
-      w="100%"
+      w="full"
       position={"sticky"}
       top={0}
       zIndex={"sticky"}
