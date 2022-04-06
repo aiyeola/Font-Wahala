@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box minH="100vh" bg="app.bg" color="">
+        <Box minH="100vh" color="">
           <Heading fontSize={"30px"} fontWeight={600}>
             Dispatch Orders
           </Heading>
@@ -35,3 +35,5 @@ export default function Home() {
     </div>
   );
 }
+
+Home.requireAuth = true;
