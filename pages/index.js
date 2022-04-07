@@ -1,4 +1,5 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Heading, Text } from "@chakra-ui/react";
+import { StatsSection } from "components/dashboard";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -14,22 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box minH="100vh" color="">
-          <Heading fontSize={"30px"} fontWeight={600}>
-            Dispatch Orders
-          </Heading>
-          <Text
-            fontFamily={"Montserrat"}
-            fontSize={"30px"}
-            fontWeight={600}
-            color="app.primary"
-          >
-            Finesse Pharmacy
-          </Text>
-
-          <Button variant="red" size="xs">
-            Hello
-          </Button>
+        <Box minH="100vh">
+          <Grid templateColumns="repeat(7, 1fr)">
+            <GridItem colSpan={5}>
+              <StatsSection />
+            </GridItem>
+            <GridItem colSpan={2}>{/* <StatsSection /> */}</GridItem>
+          </Grid>
         </Box>
       </main>
     </div>
