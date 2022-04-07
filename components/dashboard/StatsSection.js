@@ -6,44 +6,53 @@ import TotalIncome from "./TotalIncome";
 
 const StatsSection = () => {
   return (
-    <Box>
-      <Grid templateColumns="repeat(5, 1fr)" gap="4" alignItems="center">
-        <GridItem colSpan={2} h="">
+    <>
+      <Grid
+        h="40%"
+        templateColumns="repeat(5, 1fr)"
+        gap="4"
+        sx={{
+          gridAutoRows: "1fr",
+        }}
+        alignItems="center"
+      >
+        <GridItem colSpan={2} h="full">
           <TotalIncome />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard title={"Total Customers"} amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard title={"Total Phlebotomists"} amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard title={"Total Medical Firms"} amount="999k" />
         </GridItem>
       </Grid>
       <Grid
+        h="60%"
         mt="34px"
         templateColumns="repeat(5, 1fr)"
         gap="4"
         alignItems="center"
       >
-        <GridItem>
+        <GridItem h="full">
           <StatsCard2 title="Total Statffs" amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard2 title="Total Orders" amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard2 title="Total Customers" amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard2 title="Total Phlebotomists" amount="999k" />
         </GridItem>
-        <GridItem h="">
+        <GridItem h="full">
           <StatsCard2 title="Total Medical Firms" amount="999k" />
         </GridItem>
       </Grid>
-    </Box>
+    </>
   );
 };
 

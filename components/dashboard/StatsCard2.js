@@ -3,7 +3,7 @@ import React from "react";
 
 const StatsCard2 = ({ title, amount }) => {
   return (
-    <Box px="20px" py="50px" bg="white" rounded="38px">
+    <Box px="20px" py="50px" bg="white" rounded="38px" h="full">
       <Box h="40px" rounded="10px" bg="app.yellow" mb="16px" w="40px"></Box>
       <Text color="#373737" pb="5px">
         {title}

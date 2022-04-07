@@ -3,7 +3,7 @@ import React from "react";
 
 const TotalIncome = () => {
   return (
-    <Box bg="app.primary" rounded="40px" p="30px">
+    <Box bg="app.primary" rounded="40px" p="30px" h="full">
       <Circle size={"50px"} bg="white" mb="14px"></Circle>
       <Text color="#ffffffcc" pb="5px">
         Total Income
