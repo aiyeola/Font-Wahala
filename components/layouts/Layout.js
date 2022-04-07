@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           </Box>
         </GridItem>
         <GridItem position="relative" colSpan="7">
-          <Box h="4200px" pos="sticky" top={0} w="full">
+          <Box pos="sticky" top={0} w="full">
             {children}
           </Box>
         </GridItem>
