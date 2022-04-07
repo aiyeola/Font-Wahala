@@ -18,7 +18,7 @@ export default function Home() {
         <Box minH="100vh">
           <Grid
             templateColumns="repeat(7, 1fr)"
-            gap="6"
+            gap={["3", , , , , "5"]}
             alignItems="center"
             // gridAutoRows="1fr"
             sx={{

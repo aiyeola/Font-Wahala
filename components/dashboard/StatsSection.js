@@ -10,7 +10,7 @@ const StatsSection = () => {
       <Grid
         h="40%"
         templateColumns="repeat(5, 1fr)"
-        gap="4"
+        gap={["2", , , , , "3"]}
         sx={{
           gridAutoRows: "1fr",
         }}
